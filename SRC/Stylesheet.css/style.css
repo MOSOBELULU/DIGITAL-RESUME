@@ -8,35 +8,36 @@
 body {
   background-color: rgb(146, 198, 198);
 }
-/*  */
+/* FONT STYLE OF HEADER AND ALIGNED TEXT WITH BACKGROUND IMAGE */
 header {
   font-family: "Rammetto one";
   text-align: center;
   background-image: url(../images/backgroundImage.webp);
 }
+/* font color of header */
 header p {
   color: rgb(50, 48, 48);
 }
-
+/* nav bar and decorations */
 .nav-bar a {
   padding-left: 5%;
   text-decoration-line: none;
 }
-
+/* nav hover */
 .nav-bar a:hover {
   color: rgb(90, 19, 79);
 }
-
+/* img radius to be oval */
 img {
   border-radius: 50%;
 }
-
+/* grid layout */
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-column-gap: 5%;
 }
-
+/* style grid */
 .grid div {
   padding: 15%;
   background-color: rgb(143, 76, 107);
@@ -54,7 +55,7 @@ img {
   text-decoration: underline solid white;
   text-align: center;
 }
-
+/* flexbox container decoration */
 .flexbox-container {
   background-color: rgb(44, 166, 146);
   display: flex;
@@ -64,6 +65,7 @@ img {
   align-items: normal;
   padding-top: 30px;
 }
+/* child1  styling */
 .contacts {
   padding-top: 50px;
   border: black solid;
@@ -73,6 +75,7 @@ img {
   text-align: center;
   height: 350px;
 }
+/* child2 styling  */
 .form {
   border: black solid;
   border-radius: 10%;
@@ -80,6 +83,7 @@ img {
   height: 380px;
   text-align: center;
 }
+/* change the colour font of contacts */
 .contacts a {
   color: blue;
   transition: color 0.2s ease-in-out;
@@ -87,9 +91,11 @@ img {
   margin-right: 20px;
   padding-top: 50%;
 }
+/* hover icons */
 .contacts a:hover {
   color: red;
 }
+/* form input */
 .form input {
   border-radius: 30px;
   font-size: 85%;
@@ -97,11 +103,13 @@ img {
 }
 /* -------------------------------------MEDIA MOBILE SCREEN------------------------------------------ */
 @media only screen and (max-width: 600px) {
-  .header {
+ /* header */
+    .header {
     font-size: smaller;
     font-family: "Times New Roman", Times, serif;
     margin: 0;
   }
+  /* grid div */
   .grid div {
     font-size: smaller;
     background-color: crimson;
@@ -117,6 +125,7 @@ img {
   .grid h3 {
     font-size: smaller;
   }
+  /* flexbox container */
   .flexbox-container {
     background-color: rgb(247, 247, 243);
     height: 350px;
@@ -193,11 +202,14 @@ img {
     background-color: rgb(143, 76, 107);
     border: rgb(255, 251, 10) solid;
     text-align: left;
-
+    color: black;
     border-radius: 10%;
   }
   .grid {
     grid-column-gap: 5%;
+  }
+  .grid h2 {
+    text-decoration: underline solid rgb(245, 242, 243);
   }
 
   .grid h3 {

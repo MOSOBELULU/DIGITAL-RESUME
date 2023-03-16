@@ -1,0 +1,231 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(146, 198, 198);
+}
+
+header {
+  font-family: "Rammetto one";
+  text-align: center;
+  background-image: url(../images/backgroundImage.webp);
+}
+header p {
+  color: rgb(50, 48, 48);
+}
+
+.nav-bar a {
+  padding-left: 5%;
+  text-decoration-line: none;
+}
+
+.nav-bar a:hover {
+  color: rgb(90, 19, 79);
+}
+
+img {
+  border-radius: 50%;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 5%;
+}
+
+.grid div {
+  padding: 15%;
+  background-color: rgb(143, 76, 107);
+  text-align: justify;
+  border: rgb(255, 251, 10) solid;
+  border-radius: 10%;
+  font-family: "Times New Roman", Times, serif;
+  cursor: pointer;
+}
+.grid h3 {
+  font-weight: normal;
+  font-size: large;
+}
+.grid h2 {
+  text-decoration: underline solid white;
+  text-align: center;
+}
+
+.flexbox-container {
+  background-color: rgb(44, 166, 146);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  height: 450px;
+  align-items: normal;
+  padding-top: 30px;
+}
+.contacts {
+  padding-top: 50px;
+  border: black solid;
+  border-radius: 10%;
+  margin-right: 0%;
+  width: 500px;
+  text-align: center;
+  height: 350px;
+}
+.form {
+  border: black solid;
+  border-radius: 10%;
+  width: 500px;
+  height: 380px;
+  text-align: center;
+}
+.contacts a {
+  color: blue;
+  transition: color 0.2s ease-in-out;
+  font-size: 500%;
+  margin-right: 20px;
+  padding-top: 50%;
+}
+.contacts a:hover {
+  color: red;
+}
+.form input {
+  border-radius: 30px;
+  font-size: 85%;
+  padding: 1%;
+}
+/* -------------------------------------MEDIA MOBILE SCREEN------------------------------------------ */
+@media only screen and (max-width: 600px) {
+  .header {
+    font-size: smaller;
+    font-family: "Times New Roman", Times, serif;
+    margin: 0;
+  }
+  .grid div {
+    font-size: smaller;
+    background-color: crimson;
+    border: black 1px solid;
+    text-align: left;
+
+    border-radius: 0%;
+  }
+  .grid {
+    grid-column-gap: 0%;
+  }
+
+  .grid h3 {
+    font-size: smaller;
+  }
+  .flexbox-container {
+    background-color: rgb(247, 247, 243);
+    height: 350px;
+  }
+  .form {
+    font-size: xx-small;
+    width: 300px;
+    height: 300px;
+    background-color: crimson;
+  }
+  .contacts {
+    font-size: xx-small;
+    height: 300px;
+    background-color: rgb(218, 89, 115);
+  }
+  .box {
+    font-size: xx-small;
+  }
+}
+
+/* -------------------------------------MEDIA TABLE SCREEN------------------------------------------- */
+@media only screen and (min-width: 601px) {
+  .header {
+    font-size: medium;
+    font-family: "Times New Roman", Times, serif;
+    margin: 0;
+  }
+  .grid div {
+    font-size: medium;
+    background-color: rgb(89, 88, 90);
+    border: rgb(253, 249, 249) solid;
+    text-align: left;
+    color: white;
+    border-radius: 0%;
+  }
+  .grid h2 {
+    text-decoration: underline solid rgb(246, 44, 148);
+  }
+  .grid {
+    grid-column-gap: 0%;
+  }
+
+  .grid h3 {
+    font-size: medium;
+  }
+  .flexbox-container {
+    background-color: rgb(247, 247, 243);
+    height: 400px;
+  }
+  .form {
+    font-size: medium;
+    width: 300px;
+    height: 350px;
+    background-color: crimson;
+  }
+  .contacts {
+    font-size: medium;
+    height: 300px;
+    background-color: rgb(218, 89, 115);
+  }
+  .box {
+    font-size: medium;
+  }
+}
+/* --------------------------------------MEDIA LAPTOP/DESKTOP------------------------------------------ */
+@media only screen and (min-width: 1024px) {
+  .header {
+    font-size: large;
+    font-family: "Rammetto one";
+    margin: 0;
+  }
+  .grid div {
+    font-size: large;
+    background-color: rgb(143, 76, 107);
+    border: rgb(255, 251, 10) solid;
+    text-align: left;
+
+    border-radius: 10%;
+  }
+  .grid {
+    grid-column-gap: 5%;
+  }
+
+  .grid h3 {
+    font-size: large;
+  }
+  .flexbox-container {
+    background-color: rgb(44, 166, 146);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 450px;
+    align-items: normal;
+    padding-top: 30px;
+  }
+
+  .form {
+    border: black solid;
+    border-radius: 10%;
+    width: 500px;
+    height: 40
+    0px;
+    text-align: center;
+  }
+  .contacts {
+    font-size: large;
+    height: 300px;
+    background-color: rgb(218, 89, 115);
+  }
+  .box {
+    font-size: large;
+  }
+}

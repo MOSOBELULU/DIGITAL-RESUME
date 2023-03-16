@@ -1,13 +1,14 @@
+/* standard values for css */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
+/* background color for the whole body */
 body {
   background-color: rgb(146, 198, 198);
 }
-
+/*  */
 header {
   font-family: "Rammetto one";
   text-align: center;
@@ -226,6 +227,6 @@ img {
     background-color: rgb(218, 89, 115);
   }
   .box {
-    font-size: large;
+    font-size: 10px;
   }
 }

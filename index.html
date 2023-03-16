@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>DIGITAL RESUME</title>
     <link rel="stylesheet" href="SRC/Stylesheet.css/style.css">
+    <!-- link for google font -->
     <link href='https://fonts.googleapis.com/css?family=Rammetto One' rel='stylesheet'>
-
     <!--Link for icons-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
 
@@ -23,7 +23,7 @@
             <a href="#About">About</a>
             <a href="#Education">Education</a>
             <a href="#Skills and Abilities">Skills</a>
-            <a href="#Contact">Contact</a>
+            <a href="#Contacts">Contacts</a>
             <a href="#Contact Form">Contact Form</a>
         </nav>
 
@@ -34,6 +34,7 @@
             <source srcset="SRC/images/medium.jpeg" media="(max-width: 900px )">
             <img src="SRC/images/large.jpeg" alt="myPhoto" width="30%" height="30%" class="img">
         </picture>
+        <!-- introductory statement -->
         <p>As a software developer student, I am eager to apply my programming skills and knowledge to develop
             innovative software solutions that meet the needs of modern businesses and organizations. With a strong
             foundation in programming languages such HTML and CSS.
@@ -46,7 +47,7 @@
     <section>
         <div class="grid">
             <div>
-                <!-- Background Information -->
+                <!-- Background Information and #id for the nav -->
                 <h2 id="About">About</h2>
                 <br>
                 <h3>Address: 26 Maile Diepkuil, Rustenburg, 0300</h3>
@@ -56,11 +57,11 @@
                 <ul>
                     <h3>Languages:<li>Setswana Home Language</li>
                         <li>English Second Language</li>
-                        
+
                     </h3>
                 </ul>
             </div>
-            <!-- Education row on the grid -->
+            <!-- Education row on the grid  adn the #id for the nav-->
             <div>
                 <h2 id="Education">Education</h2>
                 <br>
@@ -83,7 +84,7 @@
                 </ol>
                 </h2>
             </div>
-            <!-- div of a third row Skills and Abilities with numebering and bullets system -->
+            <!-- div of a third row Skills and Abilities with numebering and bullets system  and #id for the Nav-->
             <div>
                 <h2 id="Skills and Abilities"> Skills and Abilities</h2>
                 <br>
@@ -118,14 +119,19 @@
         </div>
     </section>
     <br>
+    <!-------------------------------- back to top button -------------------------->
     <button id="button">
         <h3><a href="#heading" id="back">Back To Top</a></h3>
     </button>
+    <!-- Footer -->
     <footer>
+        <!-- flexbox container -->
         <div class="flexbox-container">
+            <!-- flexbox child1 -->
             <div class="contacts">
-
-                <h3>  Email: mosobelulu@gmail.com</h3>
+                <h2 id="Contacts">Contacts</h2>
+                <br>
+                <h3> Email: mosobelulu@gmail.com</h3>
                 <h3> <i class="fa fa-mobile" aria-hidden="true"></i> Cell-Phone number: 076 5275 896</h3>
                 <br>
                 <a
@@ -134,18 +140,19 @@
                 <a href="https://github.com/MOSOBELULU"> <i class="fa fa-github" aria-hidden="true"></i></a>
                 <a href=""><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
             </div>
-            <div class="form">
+            <!-- flexbox child2 -->
+            <div class="form" id="Contact Form">
                 <form action="https://formsubmit.co/mosobelulu@gmail.com" method="POST">
                     <h2> CONTACT FORM </h2>
                     <br>
                     <label> First Name:
-                        <input type="text" name="Name" Required>
+                        <input type="name" name="Name" Required>
                     </label><br>
                     <label> Last Name:
-                        <input type="text" name="Last Name">
+                        <input type="name" name="Last Name">
                     </label><br>
                     <label> Email:
-                        <input type="text" name="Email" placeholder="enter email address">
+                        <input type="name" name="Email">
                     </label><br>
                     <select name="reason" id="subject"> Reason for site visit
                         <option value="Potential Employer">Potential Employer</option>
@@ -153,8 +160,7 @@
                     </select>
                     </br>
                     <h3> Please leave a message here</h3>
-                    <textarea name="message" id="text" cols="30" rows="10" placeholder="..Optional"
-                        class="box"></textarea>
+                    <textarea name="message" id="text" cols="30" rows="10" required class="box"></textarea>
                     <br>
                     <!-- button submit -->
                     <button type="Submit">Submit</button>
@@ -163,12 +169,8 @@
 
             </div>
         </div>
-       
+
     </footer>
-
-
-
-
 </body>
 
 </html>
